@@ -1,0 +1,10 @@
+{
+    "env_name": "staging",
+    "domain_name": "staging.leigholiver.com",
+    "branch_specifier": "staging",
+    "allowed_ips": [ "{{ secrets.STAGING_ALLOWED_IP }}" ],
+    "post_deploy_tasks": [
+        ["tests", "--live"],
+        ["seed", "--live"]
+    ]
+}

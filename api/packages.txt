@@ -1,0 +1,5 @@
+cffi
+boto3
+requests
+pyjwt
+bcrypt
