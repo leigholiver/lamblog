@@ -1,5 +1,8 @@
 {
     "env_name": "master",
     "domain_name": "leigholiver.com",
-    "branch_specifier": "master"
+    "branch_specifier": "master",
+    "www_redirects": [
+        { "from": "www.leigholiver.com", "to": "leigholiver.com" }
+    ]
 }
