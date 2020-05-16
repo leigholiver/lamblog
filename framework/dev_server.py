@@ -77,11 +77,17 @@ def process_request(path, request):
         data = json.dumps(request.get_json(force=True))
     except:
         data = None
+    
+    # lowercase the headers, for some reason 
+    # flask uppercases the first character?
+    headers = {}
+    for key in dict(request.headers).keys():
+        headers[key.lower()] = request.headers[key]
 
     return {
         "httpMethod": request.method,
         "path": path,
-        "headers": dict(request.headers),
+        "headers": headers,
         "queryStringParameters": dict(request.args),
         "body": data
     }
