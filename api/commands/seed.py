@@ -14,7 +14,7 @@ class seed(command):
         except:
             pass
         
-        if not results:
+        if not results or '-y' in data:
             for i in range(0, 10):
                 test_blog_data = {
                     'title': self.test_title + "-" + str(i),

@@ -41,7 +41,7 @@ const Blog = ({currLogin, startEdit, title, text, slug, created, truncate}) => {
             </CardContent>
             <CardActions style={{ padding: "8px 15px" }}>
                 <Typography component="span" variant="caption" style={{ flexGrow: "1" }}>
-                    { truncate  && <Link to={`/${slug}`}>more</Link> }
+                    { truncate && text.length > 256 && <Link to={`/${slug}`}>more</Link> }
                     { !truncate && <Link to={`/`}>back home</Link>   }
                 </Typography>
             </CardActions>

@@ -42,7 +42,7 @@ const BlogListWrapper = () => {
                         </Card>
                     }
                     { blogs.map((blog) => <Blog key={blog.slug} title={blog.title} text={blog.text} slug={blog.slug} created={blog.created} truncate={true} />) }
-                    { blogs.length > 0 && 
+                    { blogs.length === 5 &&
                         <Card style={{ borderRadius: "2px", marginBottom: "4px", padding: "0px 15px" }}>
                             <CardActions style={{ flexDirection: "row-reverse", padding: "4px" }}>
                                 <Typography component="" variant="caption" style={{ textAlign: "right" }}>
