@@ -1,5 +1,7 @@
 ### lamblog
- 
+
+![Tests](https://github.com/leigholiver/lamblog/workflows/Tests/badge.svg) ![Deployment](https://github.com/leigholiver/lamblog/workflows/Deployment/badge.svg)
+
 blog made to try out [lamb](https://github.com/leigholiver/lamb) and some react integration
 
 see it in action on [my website](https://leigholiver.com)
