@@ -1,7 +1,7 @@
 locals {
   env_vars = merge({
     "PROJECT_NAME" = var.project_name
-    "LAMB_ENV" = var.name
+    "LAMB_ENV"     = var.name
   }, var.env_vars)
 }
 
